@@ -40,31 +40,59 @@ void mes(char * aux){
 }
 void sim(){
   int x = rand();
-  if()			printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
+  if(x >=0 && x < (INT_MAX)/10)			
+    printf("");
+  else if(x >= (1/10)*(INT_MAX)/10 && x < (2/5)*(INT_MAX))		
+    printf("");
+  else if(x >= (1/5)*(INT_MAX)     && x < (3/10)*(INT_MAX))		
+    printf("");
+  else if(x >= (3/10)*(INT_MAX)    && x < (2/5)*(INT_MAX))		
+    printf("");
+  else if(x >= (2/5)*(INT_MAX)     && x  < (1/2)*(INT_MAX))	
+    printf("");
+  else if(x >= (1/2)*(INT_MAX)     && x  < (3/5)*(INT_MAX))	
+    printf("");
+  else if(x >= (3/5)*(INT_MAX)     && x  < (7/10)*(INT_MAX))	
+    printf("");
+  else if(x >= (7/10)*(INT_MAX)    && x < (4/5)*(INT_MAX))	
+    printf("");
+  else if(x >= (4/5)*(INT_MAX)     && x  < (9/10)*(INT_MAX))	
+    printf("");
+  else if(x >= (9/10)*(INT_MAX)    && x < (INT_MAX))	
+    printf("");
 }
 void nao(){
   int x = rand();
-  if()			printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
-  else if()		printf("");
+  if(x >=0 && x < (INT_MAX)/10)			
+    printf("");
+  else if(x >= (1/10)*(INT_MAX)/10 && x < (2/5)*(INT_MAX))		
+    printf("");
+  else if(x >= (1/5)*(INT_MAX)     && x < (3/10)*(INT_MAX))		
+    printf("");
+  else if(x >= (3/10)*(INT_MAX)    && x < (2/5)*(INT_MAX))		
+    printf("");
+  else if(x >= (2/5)*(INT_MAX)     && x  < (1/2)*(INT_MAX))	
+    printf("");
+  else if(x >= (1/2)*(INT_MAX)     && x  < (3/5)*(INT_MAX))	
+    printf("");
+  else if(x >= (3/5)*(INT_MAX)     && x  < (7/10)*(INT_MAX))	
+    printf("");
+  else if(x >= (7/10)*(INT_MAX)    && x < (4/5)*(INT_MAX))	
+    printf("");
+  else if(x >= (4/5)*(INT_MAX)     && x  < (9/10)*(INT_MAX))	
+    printf("");
+  else if(x >= (9/10)*(INT_MAX)    && x < (INT_MAX))	
+    printf("");
 }
 void bem(){
+  int x;
+  printf("Olá!\nVoce esta bem?\n");
+  printf("1 - Sim\n");
+  printf("2 - Não\n");
+  scanf("%d",&x);
+  if(x == 1)  sim();
+  else if(x == 2) nao();
+  else printf("Desculpe..Não Entendi...Poderia repetir?\n");
 }
 void inicio(){
   int x = rand();

@@ -7,7 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include < math.h>
+#include <math.h>
+#include <limits.h>
 
 void mes(char * aux){
   
@@ -58,7 +59,7 @@ void sim(){
     printf("");
   else if(x >= (4/5)*(INT_MAX)     && x  < (9/10)*(INT_MAX))	
     printf("");
-  else if(x >= (9/10)*(INT_MAX)    && x < (INT_MAX))	
+  else if(x >= (9/10)*(INT_MAX)    && x <= (INT_MAX))	
     printf("");
 }
 void nao(){
@@ -81,7 +82,7 @@ void nao(){
     printf("");
   else if(x >= (4/5)*(INT_MAX)     && x  < (9/10)*(INT_MAX))	
     printf("");
-  else if(x >= (9/10)*(INT_MAX)    && x < (INT_MAX))	
+  else if(x >= (9/10)*(INT_MAX)    && x <= (INT_MAX))	
     printf("");
 }
 void bem(){
@@ -97,12 +98,13 @@ void bem(){
 void inicio(){
   int x = rand();
   char aux[15];
-  if(){			bem();
-  }else if(){		
+  if(x >= (1/5)*(INT_MAX)/10 && x < (2/5)*(INT_MAX)){			bem();
+  }else if(x >= (2/5)*(INT_MAX)/10 && x < (3/5)*(INT_MAX)){		
     printf("Olá!\nAndo meio esquecida ultimamente...Em que mes estamos?\n");
     scanf("%s",aux);
     mes(aux);
-  }else if(){
+  }else if(x >= (3/5)*(INT_MAX)/10 && x < (4/5)*(INT_MAX)){
+  }else if(x >= (4/5)*(INT_MAX)/10 && x <= *(INT_MAX)){
 
 }
 void matematica(){
